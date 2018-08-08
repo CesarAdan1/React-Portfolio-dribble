@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+figure,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.header {
+  background-color: rgba(47,47,47,0.98);
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header img {
+  width: 76px;
+}
+
+.shot {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+  width: 220px;
+  padding: 10px;
+  margin: 5px;
+  background-color: white;
+}
+
+.shot img {
+  width: 100%;
+}
+
+.shots__stats {
+  color: #aaa;
+  font-size: 11px;
+}
+
+.shots__list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.shots__list li {
+  margin-left: 5px;
+}
+
+.shots__list i {
+  margin-right: 5px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 40px auto;
+  justify-content: space-between;
+}
