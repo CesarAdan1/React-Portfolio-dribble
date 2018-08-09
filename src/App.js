@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 import Header from './components/Header';
 import Shots from './components/Shots';
-
 import './App.css';
+
 import {name, year} from './data/author';
 
 
@@ -18,13 +18,39 @@ const styles = {
   background: 'gray'
 };
 
+/*const shapes ={
+  background: '',
+};
+const shapesli ={
+};
+const shapesul ={
+};
+const a = {
+},*/
+
 class App extends Component {
   render() {
     return (
       <div>
         <Header />
+        <nav className='filters'>
+          <ul>
+            <li>
+              <a href='#'>All <i className='fa fa-chevron-down' /> </a>
+            </li>
+            <li>
+              <a href='#'>Popular <i className='fa fa-chevron-down' /> </a>
+            </li>
+            <li>
+              <a href='#'>Recent <i className='fa fa-chevron-down' /></a>
+            </li>
+            <li>
+              <a href='#'>Debut <i className='fa fa-chevron-down' /></a>
+            </li>
+          </ul>
+        </nav>
         <Shots />
-      <p style={ styles }>Written by {name}. {year}.</p>
+        <p style={ styles }>Writen by { name }. { year } .</p>
       </div>
     );
   }

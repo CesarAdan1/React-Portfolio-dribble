@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Cover from './Cover';
-import Stats from './Stats';
+import Stats from './Stats/Stats';
 
 class Shot extends Component {
   render() {

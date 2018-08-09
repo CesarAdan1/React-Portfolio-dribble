@@ -42,28 +42,42 @@ ul {
   width: 100%;
 }
 
-.shots__stats {
-  color: #aaa;
-  font-size: 11px;
-}
-
-.shots__list {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.shots__list li {
-  margin-left: 5px;
-}
-
-.shots__list i {
-  margin-right: 5px;
-}
-
 .container {
   display: flex;
   flex-wrap: wrap;
   max-width: 1000px;
   margin: 40px auto;
   justify-content: space-between;
+}
+
+.filters {
+  background-color: white;
+  height: 50px;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.filters ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filters li {
+  margin: 0 6px;
+}
+
+.filters a {
+  line-height: 50px;
+  color: #444;
+  font-weight: bold;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.fa.fa-chevron-down {
+  color: #BCBCBC;
+  font-size: 12px;
 }
